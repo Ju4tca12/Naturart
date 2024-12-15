@@ -1,0 +1,140 @@
+.alert-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+@media only screen and (min-width: 768px) {
+    /* Para pantallas más grandes como en PCs */
+    .alert {
+        justify-content: space-between;
+    }
+}
+
+.alert {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #4b6b7460;
+    overflow: hidden;
+    width: 90vw;
+    /* Ancho ajustable */
+    max-width: 350px;
+    max-height: 470px;
+}
+
+.dark .alert {
+    background-color: rgb(21, 29, 33);
+    border-radius: 10px;
+    box-shadow: 0 0 10px #4b6b7460;
+    overflow: hidden;
+    width: 90vw;
+    /* Ancho ajustable */
+    max-width: 350px;
+    max-height: 470px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    cursor: pointer;
+    color: #00c3ff;
+    border-radius: 1px;
+    font-size: xx-large;
+}
+
+.dark .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    cursor: pointer;
+    color: #00c3ff;
+    border-radius: 1px;
+    font-size: xx-large;
+}
+
+.alert-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.alert-content img {
+    width: 330px;
+    height: 350px;
+    border-radius: 5px;
+    position: relative;
+    top: 30px;
+}
+
+.alert-content p {
+    margin: 0;
+    font-size: 24px;
+    color: #494949;
+    position: relative;
+    top: -365px;
+    font-size: xx-large
+}
+
+.dark .alert-content p {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+    position: relative;
+    top: -365px;
+    font-size: xx-large
+}
+
+.alert-content p:first-child {
+    left: -80%;
+}
+
+.alert-content p:focus {
+    outline: none;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 40px;
+    position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+    /* Para pantallas más grandes como en PCs */
+    .navigation {
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* Para pantallas más grandes como en PCs */
+    .navigation button {
+        left: 95%;
+    }
+}
+
+.navigation button {
+    padding: 10px 10px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    color: #7271718f;
+    background-color: #ffffff07;
+    cursor: pointer;
+    position: relative;
+    top: -270px;
+    transform: translateX(-50%);
+}
+
+.navigation button:first-child {
+    left: 95%;
+}
+
+s .navigation button:focus {
+    outline: none;
+}
